@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('vantagem');
             $table->string('desvantagem');
             $table->string('evolucao')->nullable();
-            $table->string('altura');
-            $table->string('peso');
+            $table->decimal('altura');
+            $table->decimal('peso');
+            $table->unsignedInteger('numero');
             $table->timestamps();
         });
     }
